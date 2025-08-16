@@ -1,0 +1,42 @@
+@import "../../vars.css";
+
+.typeWriterContainer{
+    font-family: var(--font-roboto);
+
+}
+
+
+.text{
+    font-size: 3rem;
+    font-weight: 900;
+    margin-bottom: 32px;
+    color: var(--color-text);
+    background: linear-gradient(90deg, var(--primary-text)70%, var(--color-background)120%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    overflow: hidden;
+    white-space: wrap;
+    display: inline;
+    border-right: 2px solid #3B82F6;
+    animation: blink 0.8s step-end infinite;
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+.noCursor {
+  border-right: none;
+  animation: none;
+}
+
+
+@media screen and (max-width: 860px) {
+    .text{
+        font-size: 50px;
+    }
+  
+}

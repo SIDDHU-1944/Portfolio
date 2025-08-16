@@ -1,0 +1,47 @@
+ [
+
+    {
+        "title" : "HTML",
+        "imagesrc" : "Skills/html-5.png"
+    },
+    {
+        "title" : "CSS",
+        "imagesrc" : "Skills/css-3.png"
+    },
+    {
+        "title" : "JS",
+        "imagesrc" : "Skills/js.png"
+    },
+    {
+        "title" : "ExpressJS",
+        "imagesrc" : "Skills/express.png"
+    },
+    {
+        "title" : "NodeJS",
+        "imagesrc" : "Skills/nodejs.png"
+    },
+    {
+        "title" : "React",
+        "imagesrc" : "Skills/react.png"
+    },
+    {
+        "title" : "MongoDB",
+        "imagesrc" : "Skills/mongodb.png"
+    },
+    {
+        "title" : "SQL",
+        "imagesrc" : "Skills/database.png"
+    },
+    {
+        "title" : "Bootstrap",
+        "imagesrc" : "Skills/bootstrap.png"
+    },
+    {
+        "title" : "Tailwind",
+        "imagesrc" : "Skills/TailwindCSS.png"
+    },
+    {
+        "title" : "Power BI",
+        "imagesrc" : "Skills/power-bi.png"
+    }
+ ]

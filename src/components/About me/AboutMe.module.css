@@ -1,0 +1,128 @@
+@import "../../vars.css";
+
+.aboutMe{
+  padding: 10px 0 10px 0;
+  z-index: 1;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 2rem;
+  background-color: var(--color-background-dark);
+  margin: 0 10% 0 10%;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  color: var(--color-text);
+  gap: 1rem;
+}
+
+
+
+.title{
+  font-size: 2.5rem;
+  font-weight: bolder;
+  letter-spacing: 1.75px;
+  text-align: center;
+  margin: 0.5rem;
+}
+
+
+.detailsBox{
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  /* width: 50%; */
+  margin-top: 0.5rem;
+  gap: 1rem;
+}
+
+.details{
+  font-family: var(--font-roboto);
+  color: var(--color-text);
+  /* text-align: justify; */
+  line-height: 1.5;
+  padding: 1rem 1rem;
+  background: var(--color-background);
+  border-radius: 10px;
+  margin: 10px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 1rem;
+}
+
+.details:hover{
+  /* background: linear-gradient(90deg, rgba(165,215,232, 0.42) 0%, var(--color-background-dark) 100%); */
+  /* border: 1px solid white; */
+  box-shadow: 0 0 2px  white;
+}
+
+.detailsIcon{
+  font-size: 2rem;
+  color: var(--primary-text);
+}
+
+.detailsText{
+  font-size: 1.2rem;
+  color: var(--color-text);
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  flex-direction: column;
+}
+
+
+@media screen and (max-width: 830px) {
+    .aboutMe{
+      background: transparent;
+      min-height: auto;
+      width: 100%;
+    }
+    .container{
+      /* background: transparent; */
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding-left: 10px;
+      padding-right: 10px;
+      box-shadow: none;
+      margin: 5%;
+      width: 90%;
+    }
+    .title{
+      font-size: 3rem;
+      text-align: center;
+    }
+    .detailsBox{
+      line-height: 1;
+      width: 100%;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      /* background: transparent; */
+    }
+    
+    .detailsIcon{
+      font-size: 1rem;
+    }
+    .detailsText{
+      font-size: 0.8rem;
+    }
+}
+
+@media screen and (max-width: 530px) {
+    .aboutMe{
+      padding: 20px 0;
+    }
+    .detailsText{
+      font-size: 1rem;
+    }
+    .title{
+      font-size: 3rem;
+    }
+}

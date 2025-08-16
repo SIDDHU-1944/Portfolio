@@ -1,0 +1,22 @@
+:root{
+    /* colors */
+    --color-text: #F1F5F9;
+    --color-text-dark: #000;
+    --primary-text: #3B82F6;
+    --primary-text-dark: #1E293B;
+    --secondary-text: rgb(148, 163, 184);
+    --color-background: #0f172a;
+    --color-background-light: #fff;
+    --color-background-dark: #0a1120;
+
+    /* btns */
+    --button-background: #3B82F6;
+    --button-border: #3B82F6;
+    --button-text: #fff;
+    --button-hover-background: #0f172a;
+
+
+    /* fonts */
+    --font-montserrat: 'Montserrat';
+    --font-roboto: 'Roboto';
+}

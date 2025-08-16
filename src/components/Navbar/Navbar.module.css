@@ -1,0 +1,98 @@
+@import "../../vars.css";
+
+.navbar{
+    position: fixed;
+    top: 10px;
+    left: 20px;
+    right: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 20px;
+    border-radius: 20px;
+    z-index: 2;
+    /* margin: 0 10%; */
+    background: rgba(148,163,184,0.7);
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+
+}
+
+.logo{
+    font-size: 30px;
+    font-weight: 700;
+    text-decoration: none;
+    color: var(--color-background);
+}
+
+.navLinks{
+    display: flex;
+}
+
+.LinksBtn{
+    border: none;
+    display: none;
+    cursor: pointer;
+}
+
+.navList{
+    display: flex;
+    list-style: none;
+    gap: 40px;
+}
+.navList a{
+    text-decoration: none;
+    font-family: var(--font-montserrat);
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--color-text);
+}
+
+.navList a:hover{
+    color: var(--primary-text);
+    transition: all 0.2s ease-in-out;
+}
+
+@media screen and (max-width: 768px) {
+    .navbar{
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px 10px;
+    }
+    .navLinks{
+        display: flex;
+        position: absolute;
+        right: 0;
+        margin-right: 10%;
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 10px;
+        z-index: 3;
+    }
+    .LinksBtn{
+        border: none;
+        display: block;
+        cursor: pointer;
+        background: transparent;
+        color: var(--color-text);
+        font-size: 30px;
+    }
+    .logo{
+        font-size: 30px;
+    }
+    .navList{
+        display: none;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+        border-radius: 10px;
+        background: var(--color-background);
+        background: linear-gradient(0deg, rgba(10,17,32,0.5) 0%, rgba(10,17,32,1) 100%);
+        padding: 20px;
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+    }
+    .active{
+        display: flex;
+        z-index: 1;
+    }   
+}
