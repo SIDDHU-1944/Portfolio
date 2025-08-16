@@ -45,37 +45,32 @@ export default function AboutMe() {
                             <h4>Course Work</h4>
                             <ul style={{listStyle:"none"}}> 
                                 <li> DSA</li>
-                                <li>DBMS, OS, OOPs</li>
-                                <li>Swarm Intelligence Techniques, Machine Learning</li>
+                                <li>DBMS, OS, OOPs, Swarm Intelligence Techniques, Machine Learning</li>
                             </ul>
                         </div>    
                     </div>
-                    <div className={styles.extraInfo}>
-                        <div className={styles.details}>
-                            <div className={styles.detailsIcon}>
-                                <FontAwesomeIcon icon={faArrowsToCircle} />
-                            </div>
-                            <div className={styles.detailsText}>
-                                <h4>Areas of Interest</h4>
-                                <ul style={{listStyle:"none"}}>
-                                    <li>Integration of AI into web applications</li>
-                                    <li>LLM models</li>
-                                    <li>robust web applications</li>
-                                </ul>
-                            </div>
+                    <div className={`${styles.details} ${styles.extraInfo}`}>
+                        <div className={styles.detailsIcon}>
+                            <FontAwesomeIcon icon={faArrowsToCircle} />
                         </div>
-                        <div className={styles.details}>
-                            <div className={styles.detailsIcon}>
-                                <FontAwesomeIcon icon={faPeopleArrows} />
-                            </div>
-                            <div className={styles.detailsText}>
-                                <h4>Co-Curricular</h4>
-                                <ul style={{listStyle:"none"}}>
-                                    <li>Worked as a Team Lead and Executive member in ChES & IICHE clubs of Nitw for 2 years</li>
-                        
-                                </ul>
-                            </div>
+                        <div className={styles.detailsText}>
+                            <h4>Areas of Interest</h4>
+                            <ul style={{listStyle:"none"}}> 
+                                <li>Integration of AI into web applications, LLM models & robust web applications</li>
+                            </ul>
+                        </div>    
+                    </div>
+                    <div className={`${styles.details} ${styles.extraInfo}`}>
+                        <div className={styles.detailsIcon}>
+                            <FontAwesomeIcon icon={faPeopleArrows} />
                         </div>
+                        <div className={styles.detailsText}>
+                            <h4>Co-Curricular</h4>
+                            <ul style={{listStyle:"none"}}> 
+                                <li>Worked as a Team Lead and Executive member in ChES & IICHE clubs of Nitw for 2 years</li>
+                                
+                            </ul>
+                        </div>    
                     </div>
                 </div>
             </div>
