@@ -125,4 +125,7 @@
     .title{
       font-size: 3rem;
     }
+    .extraInfo{
+      display: none;
+    }
 }
