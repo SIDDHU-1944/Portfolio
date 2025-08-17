@@ -32,7 +32,7 @@ function App() {
           <a href="https://www.linkedin.com/in/siddhartha-bairaboina-692575250/">
             <FontAwesomeIcon icon={faLinkedin} />
           </a>
-          <a href="">
+          <a href="https://www.instagram.com/siddhartha_24_?igsh=MW5oamgweDZwOW5lcg==">
             <FontAwesomeIcon icon={faInstagram} />
           </a>
           <a href="https://leetcode.com/u/Siddhartha2401/">
