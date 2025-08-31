@@ -43,5 +43,9 @@
     {
         "title" : "Power BI",
         "imagesrc" : "Skills/power-bi.png"
+    },
+    {
+        "title" : "Docker",
+        "imagesrc" : "Skills/docker-mark-blue.png"
     }
  ]
