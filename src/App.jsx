@@ -22,7 +22,7 @@ function App() {
       <div className={styles.footer}>
         <div className={styles.rights}>
           <p>
-            <b>&copy; Siddhartha. All rights reserved</b>
+            <b>&copy; Siddhartha_Bairaboina. All rights reserved</b>
           </p>
         </div>
         <div className={styles.icons}>

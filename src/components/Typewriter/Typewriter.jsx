@@ -4,7 +4,7 @@ import styles from "./Typewriter.module.css";
 export default function Typewriter() {
     const lines = [
         "Welcome to my Portfolio!",
-        "I'm Siddhartha"
+        "I'm Siddhartha Bairaboina"
     ]
     const [currentText, setCurrentText] = useState("");
     const [showFinalText, setShowFinalText] = useState(false);

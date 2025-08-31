@@ -6,16 +6,15 @@
     flex-direction: column;
     border-radius: 10px;
     background: linear-gradient(180deg, var(--color-background) 0%, var(--color-background-dark) 100%) ;
-    box-shadow: 0 16px 14px 0 #04152d;
     padding: 18px 24px;
     max-width: 345px;
-    transition: all 0.5s ease-in-out;
+    transition: all 0.2s ease-in-out;
 }
 
 .container:hover{
     box-shadow: 0px 0px 5px #6b6b6b;
     /* margin-top: -15px; */
-    transform: scale(1.1);
+    transform: scale(1.02);
 }
 
 .image{

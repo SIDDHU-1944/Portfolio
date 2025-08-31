@@ -11,7 +11,7 @@ export default function Hero() {
         <Typewriter />
         <h6 className={styles.role}>Student</h6>
         <p className={styles.description}>
-          I'm interested in web development and AI/ML. Open to
+          I'm interested in Full-Stack Web development and AI/ML. Open to
           learning, sharing, or teaming up — don't hesitate to reach out.
         </p>
         <div className={styles.btns}>
