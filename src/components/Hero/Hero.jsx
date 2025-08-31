@@ -19,7 +19,7 @@ export default function Hero() {
             View My Work
           </a>
           <a
-            href="mailto:bairaboinasiddhartha@gmail.com"
+            href="/#contact"
             className={styles.contactBtn}
           >
             Contact Me
