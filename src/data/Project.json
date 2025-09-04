@@ -16,11 +16,27 @@
         "source":"https://github.com/SIDDHU-1944/VidMeet" 
     },
     {
+        "title" : "Portfolio",
+        "imagesrc":"Projects/portfolio.png",
+        "description": "A react based SPA, showcasing my projects, skills and experience. You're currently experiencing it.",
+        "skills" : ["ReactJs","CSS","JS","particleJs"],
+        "demo": "https://sidverse.vercel.app/",
+        "source":"https://github.com/SIDDHU-1944/Portfolio" 
+    },
+    {
         "title" : "IntelliDo",
         "imagesrc":"Projects/IntelliDo.png",
         "description": "Full-stack task manager with an AI agent that parses unstructured user input into structured task objects (task,due date, category).",
         "skills" : [ "MERN", "LangChain.js (OpenAI)", "JWT Auth", "MUI","JS"],
         "demo": "https://intellido.onrender.com",
         "source":"https://github.com/SIDDHU-1944/IntelliDO" 
+    },
+    {
+        "title" : "More Projects",
+        "imagesrc":"Projects/comingsoon.jpg",
+        "description": "Developing....",
+        "skills" : ["exploring..."],
+        "demo": "/#projects",
+        "source":"https://github.com/SIDDHU-1944/" 
     }
 ]

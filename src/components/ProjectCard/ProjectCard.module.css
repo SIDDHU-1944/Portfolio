@@ -80,3 +80,18 @@
 .link:hover{
     background: var(--primary-text);
 }
+
+@media screen and (max-width:800px){
+    .link,.skill{
+        font-size: medium;
+    }
+} 
+@media screen and (max-width:630px) {
+    .skills{
+        display: none;
+    }
+    .description{
+        font-size: small;
+    }
+    
+}

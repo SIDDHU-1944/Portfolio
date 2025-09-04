@@ -17,9 +17,10 @@
     letter-spacing: 1.75px;
     text-transform: uppercase;
     text-align: center;
+    margin-bottom: 10px;
 }
 
-.projects{
+/* .projects{
     margin-top: 20px;
     display: flex;
     flex-direction: row;
@@ -28,4 +29,52 @@
     justify-content: center;
     gap: 10px;
     width: auto;
+} */
+
+
+.myswiper{
+    /* background: yellow; */
+    height: 100%;
+}
+
+.swiperSlide{
+    /* max-width: 345px; */
+    max-width: 50%;
+    /* padding-inline: 100px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cardWrapper {
+  display: flex;
+  justify-content: center; /* horizontal */
+  align-items: center;     /* vertical */
+  height: 100%;            /* take full slide height */
+  width: 100%;             /* take full slide width */
+  margin-bottom: 30px;
+}
+
+:global(.swiper-button-prev),
+:global(.swiper-button-next) {
+  color: #808080 !important;       /* change arrow color */ /* add background */
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+
+:global(.swiper-button-prev:hover),
+:global(.swiper-button-next:hover) {
+  color: white !important;
+}
+
+:global(.swiper-pagination-bullet){
+    background-color: white !important;
+}
+
+
+@media screen and (max-width:600px) {
+    .container{
+        margin-inline: 0;
+    }
 }

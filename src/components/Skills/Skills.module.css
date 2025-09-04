@@ -82,6 +82,7 @@
     .skillsContainer{
         min-height: auto;
         margin-top: 20px;
+        padding-top: 50px;
     }
     .skills{
         display: grid;
