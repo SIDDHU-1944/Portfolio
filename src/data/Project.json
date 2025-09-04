@@ -10,7 +10,7 @@
     {
         "title" : "VidMeet",
         "imagesrc":"Projects/VidMeet.png",
-        "description": "Built a real-Time Video Conferencing App platform enabling real-time video, audio, and text communication.",
+        "description": "Built a real-Time Video Conferencing App platform enabling video, audio, and text communication.",
         "skills" : ["WebRTC", "Socket.IO", "MERN", "MUI", "JS", "CSS"],
         "demo": "https://vidmeetfrontend-ford.onrender.com",
         "source":"https://github.com/SIDDHU-1944/VidMeet" 
