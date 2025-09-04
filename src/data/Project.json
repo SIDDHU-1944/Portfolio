@@ -3,8 +3,24 @@
         "title" : "WanderLust",
         "imagesrc":"Projects/WanderLust.PNG",
         "description": "A Fullstack web-application for discovering and booking unique stays and travel experiences around the world.",
-        "skills" : ["Bootstrap","JS","node","express","mongodb"],
+        "skills" : ["Bootstrap","JS","node","express","mongodb","EmbeddedJs"],
         "demo": "https://projectwanderlust-xcwa.onrender.com/",
-        "source":"" 
+        "source":"https://github.com/SIDDHU-1944/WanderLust_MajorProject" 
+    },
+    {
+        "title" : "VidMeet",
+        "imagesrc":"Projects/VidMeet.png",
+        "description": "Built a real-Time Video Conferencing App platform enabling real-time video, audio, and text communication.",
+        "skills" : ["WebRTC", "Socket.IO", "MERN", "MUI", "JS", "CSS"],
+        "demo": "https://vidmeetfrontend-ford.onrender.com",
+        "source":"https://github.com/SIDDHU-1944/VidMeet" 
+    },
+    {
+        "title" : "IntelliDo",
+        "imagesrc":"Projects/IntelliDo.png",
+        "description": "Full-stack task manager with an AI agent that parses unstructured user input into structured task objects (task,due date, category).",
+        "skills" : [ "MERN", "LangChain.js (OpenAI)", "JWT Auth", "MUI","JS"],
+        "demo": "https://intellido.onrender.com",
+        "source":"https://github.com/SIDDHU-1944/IntelliDO" 
     }
 ]
