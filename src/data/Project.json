@@ -33,7 +33,7 @@
     },
     {
         "title" : "More Projects",
-        "imagesrc":"Projects/comingsoon.jpg",
+        "imagesrc":"Projects/exploring.png",
         "description": "Developing....",
         "skills" : ["exploring..."],
         "demo": "/#projects",
