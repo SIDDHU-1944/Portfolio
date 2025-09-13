@@ -6,7 +6,7 @@ import Skills from "./components/Skills/Skills";
 import Projects from "./components/Projects/Projects";
 import Contact from "./components/ContactMe/ContactMe";
 import ParticlesBackground from "./components/ParticlesBack/ParticlesBackgr.jsx";
-import Footer from "./components/footer/footer.jsx";
+import Footer from "./components/Footer/Footer";
 function App() {
   return (
     <div className={styles.App}>
