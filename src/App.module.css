@@ -6,27 +6,3 @@
     overflow: hidden;
 }
 
-.footer{
-    position: relative;
-    bottom: 0;
-    width: 100%;
-    background: rgba(148,163,184,0.7);
-    z-index: 1;
-    color: black;
-    height: auto;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-}
-
-.icons a{
-    text-decoration: none;
-    margin: 5px;
-    color: black;
-}
-.rights{
-    text-align: center;
-}
