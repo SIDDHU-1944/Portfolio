@@ -58,6 +58,7 @@
     flex-direction: row;
     align-items: center;
     gap: 20px;
+    margin-top: 20px;
     justify-content: space-between;
 }
 
@@ -176,6 +177,9 @@
 }
 
 @media screen and (max-width: 880px){
+    .btns{
+        margin-top: 0;
+    }
     .viewBtn{
         font-size: medium;
     }
