@@ -3,16 +3,16 @@ import { Box, Button, TextField } from "@mui/material";
 import styles from "./ContactMe.module.css";
 import emailjs from "@emailjs/browser";
 
-import Snackbar from '@mui/material/Snackbar';
-import IconButton from '@mui/material/IconButton';
-import CloseIcon from '@mui/icons-material/Close';
+import Snackbar from "@mui/material/Snackbar";
+import IconButton from "@mui/material/IconButton";
+import CloseIcon from "@mui/icons-material/Close";
 
 export default function Contact() {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    message: "",
-  });
+  const [name, setName] = useState("");
+  const [nameError, setNameError] = useState(false);
+  const [email, setEmail] = useState("");
+  const [emailErr, setEmailErr] = useState(false);
+  const [msg, setMsg] = useState("");
   const [status, setStatus] = useState("");
   const [open, setOpen] = useState(false);
 
@@ -22,40 +22,47 @@ export default function Contact() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log("formData:", formData);
-    const templateParams = {
-      name: formData.name,
-      email: formData.email,
-      message: formData.message,
-    };
-    setFormData({
-      name: "",
-      email: "",
-      message: "",
-    });
-    emailjs
-      .send(
-        import.meta.env.VITE_EMAILJS_serviceId,
-        import.meta.env.VITE_EMAILJS_templateId,
-        templateParams
-      )
-      .then(
-        (response) => {
-          console.log("SUCCESS!", response.status, response.text);
-          setStatus("Mail sent successfully!");
-          setOpen(true);
-        },
-        (error) => {
-          console.log("FAILED...", error);
-          setStatus("Failed to send Mail.");
-          setOpen(true);
-        }
-      );
+    // console.log("formData:", formData);
+    if (e.target.checkValidity()) {
+      console.log(name);
+      const templateParams = {
+        name: name,
+        email: email,
+        message: msg,
+      };
+      setFormData({
+        name: "",
+        email: "",
+        message: "",
+      });
+      emailjs
+        .send(
+          import.meta.env.VITE_EMAILJS_serviceId,
+          import.meta.env.VITE_EMAILJS_templateId,
+          templateParams
+        )
+        .then(
+          (response) => {
+            console.log("SUCCESS!", response.status, response.text);
+            setStatus("Mail sent successfully!");
+            setOpen(true);
+          },
+          (error) => {
+            console.log("FAILED...", error);
+            setStatus("Failed to send Mail.");
+            setOpen(true);
+          }
+        );
+    }
+    else{
+      setStatus("Invalid-Form, Please enter proper details....")
+      setOpen(true);
+    }
   };
 
-  const handleClose =()=>{
+  const handleClose = () => {
     setOpen(false);
-  }
+  };
 
   const action = (
     <>
@@ -70,10 +77,24 @@ export default function Contact() {
     </>
   );
 
-  
-
   const handleChange = (e) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
+    if (e.target.name == "name") {
+      setName(e.target.value);
+      if (e.target.validity.valid) {
+        setNameError(false);
+      } else {
+        setNameError(true);
+      }
+    } else if (e.target.name == "email") {
+      setEmail(e.target.value);
+      if (e.target.validity.valid) {
+        setEmailErr(false);
+      } else {
+        setEmailErr(true);
+      }
+    } else {
+      setMsg(e.target.value);
+    }
   };
 
   return (
@@ -93,10 +114,17 @@ export default function Contact() {
           id="name"
           name="name"
           label="Name"
-          value={formData.name}
+          value={name}
           variant="filled"
           onChange={handleChange}
           // className={styles.customTextField}
+          error={nameError}
+          inputProps={{
+            pattern: "[A-Za-z ]+",
+          }}
+          helperText={
+            nameError ? "Please enter your name (letters and spaces only)" : ""
+          }
           sx={{
             "& .MuiFilledInput-root": {
               backgroundColor: "#f0f0f0",
@@ -115,10 +143,15 @@ export default function Contact() {
           id="email"
           label="Email"
           name="email"
-          value={formData.email}
+          value={email}
           variant="filled"
           autoComplete="on"
           onChange={handleChange}
+          error={emailErr}
+          helperText={emailErr ? "Please enter a valid email" : ""}
+          inputProps={{
+            type: "email",
+          }}
           sx={{
             "& .MuiFilledInput-root": {
               backgroundColor: "#f0f0f0",
@@ -132,12 +165,13 @@ export default function Contact() {
               backgroundColor: "#e8f5e9",
             },
           }}
+          required
         />
         <TextField
           id="message"
           label=""
           variant="filled"
-          value={formData.message}
+          value={msg}
           placeholder="Enter your message"
           name="message"
           multiline
